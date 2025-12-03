@@ -5,7 +5,7 @@ from ..schemas.cart import CartResponse, CartItem, \
                             CartItemCreate, CartItemUpdate
 from fastapi import HTTPException, status
 
-class CartServise:
+class CartService:
     def __init__(self, db: Session):
         self.product_repository = ProductRepository(db)
 

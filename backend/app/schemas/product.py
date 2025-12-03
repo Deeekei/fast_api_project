@@ -9,8 +9,8 @@ class ProductBase(BaseModel):
     description: Optional[str] = Field(None, description="Product descriprion")
     price: float = Field(..., gt=0, description="Product price, must be greater than 0")
 
-    category_id = int = Field(..., description="Category id")
-    image_url = Optional[str] = Field(None, description="Product image url")
+    category_id: int = Field(..., description="Category id")
+    image_url: Optional[str] = Field(None, description="Product image url")
 
 class ProductCreate(ProductBase):
     pass

@@ -1,4 +1,4 @@
-from sqlalchemy import Session
+from sqlalchemy.orm import Session
 from typing import List
 from ..repositories.product_repository import ProductRepository
 from ..repositories.category_repository import CategoryRepository
